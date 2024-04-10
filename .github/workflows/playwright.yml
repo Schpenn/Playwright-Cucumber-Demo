@@ -27,7 +27,7 @@ jobs:
         retention-days: 30
     - name: Publish HTML report to testresults.marcusfelling.com
       if: always() # We want this to always run, even if test fail prior to this step running
-      uses: peaceiris/actions-gh-pages@v3.7.3
+      uses: peaceiris/actions-gh-pages@v4.0.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./playwright-report/ # This is where index.html will be output
