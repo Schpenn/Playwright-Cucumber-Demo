@@ -1,5 +1,7 @@
 import { test, expect } from '@playwright/test';
 
+//Given I navigate to the Website
+//then the website should have 'Playwright' in the title
 test('has title', async ({ page }) => {
   await page.goto('https://playwright.dev/');
 
@@ -7,6 +9,9 @@ test('has title', async ({ page }) => {
   await expect(page).toHaveTitle(/Playwright/);
 });
 
+//Given I navigate to the website
+//When I click on 'Get started'
+//Then I should see the heading 'Installation'
 test('get started link', async ({ page }) => {
   await page.goto('https://playwright.dev/');
 
