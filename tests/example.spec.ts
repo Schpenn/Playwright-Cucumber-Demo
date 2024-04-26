@@ -9,6 +9,9 @@ test('has title', async ({ page }) => {
   await expect(page).toHaveTitle(/Playwright/);
 });
 
+
+
+
 //Given I navigate to the website
 //When I click on 'Get started'
 //Then I should see the heading 'Installation'
