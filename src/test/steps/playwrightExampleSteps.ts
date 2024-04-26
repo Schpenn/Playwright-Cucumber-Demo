@@ -1,6 +1,6 @@
 import { Given, When, Then } from '@cucumber/cucumber';
 import { expect } from '@playwright/test';
-import { pageFixture  } from "../../hooks/pageFixture";
+import { pageFixture  } from "./hooks/pageFixture";
 
 Given('I navigate to the Website', async () =>{
    // browser = await chromium.launch({headless:false});
