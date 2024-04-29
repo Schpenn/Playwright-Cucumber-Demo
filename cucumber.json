@@ -3,6 +3,7 @@
         "formatOptions": {
             "snippetInterface": "async-await"
         },
+        "format": ["html:playwright-report/cucumber-report.html"],
         "dryRun": false,
         "paths": [
             "src/test/features/"
