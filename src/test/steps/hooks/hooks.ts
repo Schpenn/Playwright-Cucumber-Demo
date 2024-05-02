@@ -5,7 +5,6 @@ import { pageFixture } from "./pageFixture";
 let page: Page;
 let browser: Browser;
 
-
 Before(async function () {
     browser = await chromium.launch({headless: true});
     page = await browser.newPage();

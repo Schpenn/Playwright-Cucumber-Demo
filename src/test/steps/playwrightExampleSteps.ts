@@ -16,4 +16,4 @@ When('I click on the link Get started', async () => {
 
 Then('The heading Installation should be visible', async () =>{
   await expect(pageFixture.page.getByRole('heading', { name: 'Installation' })).toBeVisible();
-})
+});

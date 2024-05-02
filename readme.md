@@ -1,5 +1,13 @@
 # Demo av Playwright med Cucumber
 
+## Instalasjon:
+Det forutsettes at man har Node installert allerede
+
+Klon repoet og kjør ``` npm install ``` <br>
+For å kjøre testene med Playwright, skriv ``` npx playwright test ``` <br>
+For å kjøre testene med Cucumber, skriv ``` npm test ```
+
+
 ## Det beste fra to verdner:
 Det beste med Cucumber er at det er lett å forstå for alle, selv om man ikke er god på å lese kode. Med Cucumber skrives tester med vanlig språk med såkalt Gherkin-syntax. Vi kan koble sammen disse vanlige setningene til kode, som så utfører det som beskrives.
 
