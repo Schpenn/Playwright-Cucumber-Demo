@@ -18,13 +18,13 @@ Det beste med Playwright er at det enkelt kan brukes for å utføre handlingene 
    **When** I click on the button<br>
    **Then** something should happen<br>
 
-![alt text](image-1.png)
+![alt text](img/image-1.png)
 
 ## Testrapport
 Testrapportene, en fra Playwright og en fra Cucumber vil legge seg i en mappe som kalles "playwright-report"<br>
-![alt text](image.png)
+![alt text](img/image.png)
 
 ## Github Actions
 Det er satt opp slik at alle tester, både Playwright og Cucumber, kjøres i Github Actions ved PR og/eller Push til main branch'en<br>
-![alt text](image-3.png)<br>
+![alt text](img/image-2.png)<br>
 Etter at testene er kjørt, vil testresultatene publiseres. Testrapporten fra Playwright finner du på url'en /Playwright-Cucumber-Demo/ og rapporten fra Cucumber finner du på /Playwright-Cucumber-Demo/cucumber-report.html 
