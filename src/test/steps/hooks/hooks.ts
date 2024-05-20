@@ -17,12 +17,10 @@ Before(async function () {
     this.attach(screenshot, 'image/png');
   });
  */
-After(async function () {
-    After(async function (scenario) {
-        if (scenario.result?.status === Status.FAILED) {
-          const screenshot = await this.page.screenshot();
-          this.attach(screenshot, 'image/png');
-        }
-        await browser.close();
-      });
+After(async function (scenario) {
+    if (scenario.result?.status === Status.FAILED) {
+        const screenshot = await this.page.screenshot();
+        this.attach(screenshot, 'image/png');
+    }
+    await browser.close();
 });
