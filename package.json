@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js test"
+    "test:chromium": "set BROWSER=chromium&& cucumber-js -r ts-node/register -r cucumber.ts --format html:reports/chromium.html",
+    "test:firefox": "set BROWSER=firefox&& cucumber-js -r ts-node/register -r cucumber.ts --format html:reports/firefox.html",
+    "test:webkit": "set BROWSER=webkit&& cucumber-js -r ts-node/register -r cucumber.ts --format html:reports/webkit.html",
+    "test:all": "npm run test:chromium && npm run test:firefox && npm run test:webkit && npm run merge-reports",
+    "merge-reports": "ts-node merge-reports.ts"
   },
   "keywords": [],
   "author": "",
